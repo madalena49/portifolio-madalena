@@ -1,80 +1,82 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-font-family:Arial;
-background:#f0f2f5;
+body {
+    font-family: Arial;
+    background: #f0f2f5;
 }
 
-header{
-background:#1565c0;
-color:white;
-text-align:center;
-padding:30px;
+header {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-.foto{
-width:180px;
-height:180px;
-border-radius:50%;
-border:5px solid white;
-object-fit:cover;
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
 }
 
-section{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:15px;
-box-shadow:0 0 10px gray;
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
 }
 
-input,textarea,select{
-width:100%;
-padding:10px;
-margin-bottom:10px;
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-button{
-background:#1565c0;
-color:white;
-border:none;
-padding:12px;
-border-radius:8px;
-cursor:pointer;
+button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-button:hover{
-background:#0d47a1;
+button:hover {
+    background: #0d47a1;
 }
 
 /* Celular */
-@media(max-width:600px){
+@media(max-width:600px) {
 
-header{
-padding:15px;
-}
+    header {
+        padding: 15px;
+    }
 
 }
 
 /* Tablet */
-@media(min-width:601px) and (max-width:900px){
+@media(min-width:601px) and (max-width:900px) {
 
-section{
-margin:40px;
-}
+    section {
+        margin: 40px;
+    }
 
 }
 
 /* Computador */
-@media(min-width:901px){
+@media(min-width:901px) {
 
-body{
-max-width:1200px;
-margin:auto;
-}
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
 
 }
