@@ -1,52 +1,82 @@
-
-.atividade{
-  text-align:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.paleta{
-  margin:20px 0;
+body {
+    font-family: Arial;
+    background: #f0f2f5;
 }
 
-.cor{
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  border:2px solid #333;
-  margin:5px;
+header {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-.azul{ background:#4da3ff; }
-.verde{ background:#58d68d; }
-.amarelo{ background:#f7dc6f; }
-.rosa{ background:#f5b7b1; }
-
-.cards{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  flex-wrap:wrap;
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
 }
 
-.card{
-  background:white;
-  border:2px solid #ccc;
-  border-radius:10px;
-  width:220px;
-  padding:15px;
-  box-shadow:0 0 8px gray;
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
 }
 
-.figura{
-  font-size:70px;
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.opcoes button{
-  margin:5px;
-  padding:10px 15px;
+button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-#mensagem{
-  font-weight:bold;
-  margin-top:20px;
-  color:#0d47a1;
+button:hover {
+    background: #0d47a1;
+}
+
+/* Celular */
+@media(max-width:600px) {
+
+    header {
+        padding: 15px;
+    }
+
+}
+
+/* Tablet */
+@media(min-width:601px) and (max-width:900px) {
+
+    section {
+        margin: 40px;
+    }
+
+}
+
+/* Computador */
+@media(min-width:901px) {
+
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
 }
